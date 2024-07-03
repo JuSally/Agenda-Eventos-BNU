@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agena de Eventos</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="SCSS/style.scss">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <!-- início cabeçalho -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-secondary navbar-custom">
+            <a class="navbar-brand" href="#">
+                <img src="Imagens/calendar2-week.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+                Agenda de Eventos
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Galeria de Fotos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="">Eventos que ocorrem durante o ano </a>
+                            <a class="dropdown-item" href="índex.html">Eventos Julho-Dezembro</a>
+                            <a class="dropdown-item" href="Pontos-Turísticos-Lazer.html">Pontos Turísticos e Lazer</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- fim cabeçalho -->
+
+    <!-- início principal -->
+    <main>
+        <section id="proximos-eventos" style="margin-top: 80px;"><!--Inicio primeiro section-->
+            <div class="container">
+                <h2 class="my-4">Próximos Eventos</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imagens/download .png" class="d-block w-100" alt="Evento 1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Oktoberfest</h5>
+                                <p>A Oktoberfest de Blumenau é um festival de tradições germânicas.<br>A comemoração é a
+                                    segunda maior do mundo. </p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagens/Magia-de-Natal.png" class="d-block w-100" alt="Evento 2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Magia de Natal</h5>
+                                <p>Magia de Natal é o evento de comemoração ao natal em Blumenau!<br> Venha presenciar
+                                    os desfiles e aproveitar as atrações.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imagens/prefeitura.png" class="d-block w-100" alt="Evento 3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Prefeitura de Blumenau</h5>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Próximo</span>
+                    </button>
+                </div>
+            </div>
+        </section><!--Final primeiro section-->
+
+        <section id="agenda-eventos"><!--Inicio segundo section-->
+            <div class="container">
+                <h2 class="my-4">Agenda de Eventos</h2>
+                <div class="row">
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/festitalia.jpg" class="card-img-top" alt="Evento 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Festitália</h5>
+                                <p class="card-text">A 29ª edição da Festitália está confirmada para os dias 13 a 23 de
+                                    Junho de 2024, na Vila Germânica em Blumenau. Com uma vasta programação cultural,
+                                    musical, histórica e gastronômica, a festa contará com opções de pratos clássicos
+                                    italianos, mas também com opções já tradicionais da Festitália (como o famoso
+                                    X-Polenta) e muitas novidades inspiradas pelo tema “comida de festa”.</p>
+                                <p><strong>Data:</strong> 13/06/2024 até 23/06/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Circo.jpg" class="card-img-top" alt="Evento 2">
+                            <div class="card-body">
+                                <h5 class="card-title">O Circo Aquático</h5>
+                                <p class="card-text">Prepare-se para uma experiência única! A partir de 1º de Maio,
+                                    apresentamos uma incrível produção da Kandily Worldwide Entertainment: O CIRCO
+                                    AQUÁTICO™ em um grande espetáculo para toda a família!
+                                </p>
+                                <p><strong>Data:</strong> 01/05/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/BCX-2024.jpg" class="card-img-top" alt="Evento 3">
+                            <div class="card-body">
+                                <h5 class="card-title">BCX-2024</h5>
+                                <p class="card-text">Vocês estão preparados?
+                                    <br>
+                                    O #BCX24 VEM AÍ! 27 e 28 de julho de 2024, no parque Vila Germânica, com apoio da
+                                    Prefeitura de Blumenau,
+                                    nós esperamos por você!
+                                    <br>
+                                    Save the date porque será íncrivel
+                                </p>
+                                <p><strong>Data:</strong> 27/07/2024 e 28/07/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Sunset.jpg" class="card-img-top" alt="Evento 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Sunset Container British Beer</h5>
+                                <p class="card-text">A partir de julho, no sábado, dia 6, teremos o início do SUNSET
+                                    CONTAINER BRITISH BEER. <br> Será um sábado em cada mês… uma tarde especial das 16h
+                                    às 19 horas. Sempre com música ao vivo com DJs. </p>
+                                <p><strong>Data:</strong>06/07/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/TubaFest.jpg" class="card-img-top" alt="Evento 5">
+                            <div class="card-body">
+                                <h5 class="card-title">TubaFest</h5>
+                                <p class="card-text">Descrição</p>
+                                <p><strong>Data:</strong>06/07/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Queijo.jpg" class="card-img-top" alt="Evento 6">
+                            <div class="card-body">
+                                <h5 class="card-title">VII Prêmio Queijo Brasil</h5>
+                                <p class="card-text">O Prêmio Queijo Brasil é composto por 4 momentos, feira de
+                                    produtores, concurso, palestras e oficinas. <br> Destinado para negócios entre
+                                    produtores, comerciantes ou restaurantes, é também uma oportunidade para aproximar o
+                                    produtor dos consumidores, durante a feira.</p>
+                                <p><strong>Data:</strong>De 11/07/2024 até 14/07/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Nórdico.jpg" class="card-img-top" alt="Evento 7">
+                            <div class="card-body">
+                                <h5 class="card-title">2º Medieval in Norden</h5>
+                                <p class="card-text">Prepare-se para um dia repleto de diversão, história e momentos
+                                    incríveis! <br>
+                                    Um evento em parceria entre Norden Bar & Biergarten e Honning Hidroméis & Sidras,
+                                    com o patrocínio da Cervejaria Schornstein e apoio da MIX FM irá transformar seu
+                                    final de semana em uma vivência medieval. </p>
+                                <p><strong>Data:</strong>17/08/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Fenatib.jpg" class="card-img-top" alt="Evento 8">
+                            <div class="card-body">
+                                <h5 class="card-title">26º FENATIB Festival Nacional de Teatro para Crianças e Jovens de
+                                    Blumenau</h5>
+                                <p class="card-text">A 26ª edição do festival é uma mostra não competitiva, aberta à
+                                    participação de grupos teatrais de todo o Brasil, selecionados por uma comissão de
+                                    seleção e por grupos convidados pela comissão organizadora. <br>
+                                    O evento acontece de forma gratuita, atingindo aproximadamente 10 mil crianças e
+                                    jovens a cada edição, além de contribuir para a formação de espectadores e despertar
+                                    o gosto pelo teatro.</p>
+                                <p><strong>Data:</strong>De 16/09/2024 até 23/09/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Oktoberfest.jpg" class="card-img-top" alt="Evento 9">
+                            <div class="card-body">
+                                <h5 class="card-title">Oktoberfest 2024</h5>
+                                <p class="card-text">Música, alegria, tradição, energia e muita animação, reunidos em um
+                                    lugar que representa um pedacinho da Alemanha no Brasil. <br> Essa é a Oktoberfest
+                                    Blumenau, a segunda maior do mundo e a maior das Américas!</p>
+                                <p><strong>Data:</strong>De 09/10/2024 até 27/10/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Brique.jpg" class="card-img-top" alt="Evento 10">
+                            <div class="card-body">
+                                <h5 class="card-title">Feira Brique de Blumenau</h5>
+                                <p class="card-text">Muitos encontros durante todo o ano, para que a cultura fique cada
+                                    vez mais forte na nossa amada Blumenau! <br>
+                                    Programe-se e venha com a gente para mais um ano maravilhoso cheio de música, arte e
+                                    diversão!</p>
+                                <p><strong>Data:</strong>21/07/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Rock.jpg" class="card-img-top" alt="Evento 11">
+                            <div class="card-body">
+                                <h5 class="card-title">Dia Mundial do Rock</h5>
+                                <p class="card-text">Em comemoracao ao dia mundial do rock , a voz do TNT Charles Master
+                                    faz seu show recheado de sucessos : “nao sei” , “a irma do dr robert”, “cachorro
+                                    loco”, “o mundo é maior que teu quarto” e tantos outros que marcaram época. <br>
+                                    Abertura das bandas BayWatch e Reverb. <br>
+                                    Ingressos pelo sympla</p>
+                                <p><strong>Data:</strong>13/07/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+
+                    <!-- foto -->
+                    <div class="col-md-4 mb-4">
+                        <div class="card">
+                            <img src="Imagens/Exposições.jpg" class="card-img-top" alt="Evento 12">
+                            <div class="card-body">
+                                <h5 class="card-title">3ª Temporada de Exposições do MAB – ano 2024</h5>
+                                <p class="card-text">A 3a. Temporada de Exposições do MAB abre para o público na noite
+                                    da quinta-feira 04 de julho. Reunirá obras de artistas selecionados através de
+                                    Edital e do acervo do MAB.<br>A noite contará com a tradicional conversa com os
+                                    artistas expositores e curadores, apresentação do coro misto Stimmen des Herzens-
+                                    Centro Cultural de Blumenau.</p>
+                                <p><strong>Data:</strong> De 04/07/2024 até 25/08/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- foto -->
+                </div>
+            </div>
+        </section><!--Final segundo section-->
+
+
+        <section id="mapa-eventos"><!--Inicio terceiro section-->
+            <div class="container">
+                <h2 class="my-4">Mapa dos Eventos</h2>
+                <!-- Placeholder for the map -->
+                <div id="map" class="bg-light p-3 rounded" style="height: 400px;">
+                    <!-- Here you can integrate a map plugin like Google Maps or Leaflet -->
+                    <p>Mapa de eventos será exibido aqui.</p>
+                </div>
+            </div>
+        </section><!--Final terceiro section-->
+    </main>
+    <!-- fim principal -->
+
+    <!-- início rodapé -->
+    <footer>
+
+    </footer>
+    <!-- fim rodapé -->
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_1faKCtRCKyK-Pn2PDpx7DHlgBFJVabc&callback=initMap"
+        async defer></script>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
