@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pontos Turísticos e Lazer</title>
+    <title>Gastronomia</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,16 +13,16 @@
 
     <link rel="stylesheet" href="SCSS/style.scss">
     <link rel="stylesheet" href="CSS/styles.css">
+
 </head>
 
 <body>
-
     <!-- início cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-secondary navbar-custom">
             <a class="navbar-brand" href="#">
                 <img src="Imagens/calendar2-week.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Pontos Turísticos de Blumenau
+                Gastronomia
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
@@ -32,12 +32,17 @@
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+                        <a class="nav-link" href="principal.html">Principal<span class="sr-only"></span></a>
                     </li>
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="gastronomia.html">Gastronomia<span class="sr-only"></span></a>
+                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Galeria de Fotos
+                            Eventos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="índex.html">Eventos que ocorrem durante o ano </a>
@@ -53,6 +58,8 @@
     </header>
     <!-- fim cabeçalho -->
 
+
+
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -62,9 +69,6 @@
         crossorigin="anonymous"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
 
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_1faKCtRCKyK-Pn2PDpx7DHlgBFJVabc&callback=initMap"
-        async defer></script>
-    <script src="JS/script.js"></script>
 </body>
 
 </html>
