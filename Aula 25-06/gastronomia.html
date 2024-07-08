@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gastronomia</title>
+    <title>Página Principal</title>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,6 +13,7 @@
 
     <link rel="stylesheet" href="SCSS/style.scss">
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/x-icon" href="Imagens/Favicon.ico">
 
 </head>
 
@@ -20,8 +21,8 @@
     <!-- início cabeçalho -->
     <header>
         <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-secondary navbar-custom">
-            <a class="navbar-brand" href="#">
-                <img src="Imagens/calendar2-week.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            <a class="navbar-brand text-dark" href="#">
+                <img src="Imagens/cup-hot.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                 Gastronomia
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,26 +32,19 @@
             </button>
             <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item active">
-                        <a class="nav-link" href="principal.html">Principal<span class="sr-only"></span></a>
+                        <a class="nav-link text-dark" href="índex.html">Principal<span class="sr-only"></span></a>
                     </li>
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="gastronomia.html">Gastronomia<span class="sr-only"></span></a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Eventos
+                        <a class="nav-link text-dark" href="Eventos.html">Eventos<span class="sr-only"></span></a>
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="índex.html">Eventos que ocorrem durante o ano </a>
-                            <a class="dropdown-item" href="Pontos-Turísticos-Lazer.html">Pontos Turísticos e Lazer</a>
-                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contato</a>
+
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" href="gastronomia.html">Gastronomia<span
+                                class="sr-only"></span></a>
                     </li>
                 </ul>
             </div>
@@ -58,8 +52,65 @@
     </header>
     <!-- fim cabeçalho -->
 
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <main style="margin-top: 80px;">
+        <div class="container marketing">
 
+            <!-- START THE FEATURETTES -->
 
+            <!-- featture -->
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading fw-normal lh-1">Gastronomia <span class="text-body-secondary">e
+                            Restaurantes</span></h2>
+                    <p class="lead">Veja alguns locais one você pode aproveitar o melhor da gastronomia blumenauense!</p>
+                    <div class="mb-5 d-grid gap-2 col-6 mx-auto">
+                        <a href="restaurantes.html" class="btn btn-outline-secondary btn-lg px-4">Veja mais</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                            fill="var(--bs-secondary-color)" dy=".3em">
+                            <img src="Imagens/restaurante.jpg" alt=""></text>
+                    </svg>
+                </div>
+            </div>
+            <!-- featture -->
+
+            <hr class="featurette-divider">
+
+            <!-- featture -->
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading fw-normal lh-1">Cervejarias <span
+                            class="text-body-secondary">e Brewpubs</span></h2>
+                    <p class="lead">Explore diferentes sabores e aproveite sua estadia com um bom chopp! <br> Veja alguns locais onde você pode comprar e degustar esta iguaria!</p>
+                    <div class="mb-5 d-grid gap-2 col-6 mx-auto">
+                        <a href="cervejarias.html" class="btn btn-outline-secondary btn-lg px-4">Veja mais</a>
+                    </div>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+                        height="0" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
+                        preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <title>Placeholder</title>
+                        <rect width="100%" height="100%" fill="var(--bs-secondary-bg)" /><text x="50%" y="50%"
+                            fill="var(--bs-secondary-color)" dy=".3em"><img src="Imagens/CERVEJAA.jpg" alt=""></text>
+                    </svg>
+                </div>
+            </div>
+            <!-- featture -->
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+    </main>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
